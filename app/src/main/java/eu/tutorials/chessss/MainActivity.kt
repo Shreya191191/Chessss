@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import eu.tutorials.chessss.ui.navigation.AppNavigation
 import eu.tutorials.chessss.ui.screens.GameScreen
 import eu.tutorials.chessss.ui.theme.ChessssTheme
 
@@ -20,12 +21,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ChessssTheme {
-                GameScreen()
-//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    Greeting(
-//                        name = "Android",
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
+                AppNavigation()
                 }
             }
         }
